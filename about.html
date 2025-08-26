@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Plastering | Premier Plastering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#2c5282',
+                        accent: '#ed8936',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('plasterer_in Wakefield.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .process-step {
+            transition: all 0.3s ease;
+        }
+        
+        .process-step:hover {
+            transform: scale(1.03);
+        }
+        
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .value-icon {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-primary text-2xl font-bold"><i class="fas fa-home mr-2"></i>Premier Plastering</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-primary hover:text-accent px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">Gallery</a>
+                    <a href="#about" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">About Us</a>
+                    <a href="#areas" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">Areas Covered</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">Testimonials</a>
+                    <a href="#contact" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">Contact</a>
+                    <a href="tel:+1234567890" class="bg-accent hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">
+                        <i class="fas fa-phone mr-2"></i>Call Now
+                    </a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#services" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#gallery" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="#about" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="#areas" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Areas Covered</a>
+                <a href="#testimonials" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+                <a href="#contact" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="tel:+1234567890" class="bg-accent hover:bg-orange-600 text-white block px-3 py-2 rounded-md text-base font-medium text-center">
+                    <i class="fas fa-phone mr-2"></i>Call Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Professional Plastering Services</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Transforming your walls and ceilings with precision and craftsmanship that stands the test of time.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-accent hover:bg-orange-600 text-white px-8 py-4 rounded-md text-lg font-semibold transition duration-300">
+                    Get a Free Quote
+                </a>
+                <a href="tel:+1234567890" class="bg-transparent hover:bg-white hover:text-primary border-2 border-white text-white px-8 py-4 rounded-md text-lg font-semibold transition duration-300">
+                    <i class="fas fa-phone mr-2"></i>Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Importance of Plastering Section -->
+    <section id="importance" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Why Professional Plastering Matters</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Quality plastering is more than just a finishing touch—it's a crucial element that protects your property and enhances its value.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-6">The Foundation of Beautiful Interiors</h3>
+                    <p class="text-gray-600 mb-6">Plastering serves as the essential canvas upon which your interior design vision comes to life. A perfectly plastered wall provides the ideal surface for paint, wallpaper, or decorative finishes, ensuring your chosen aesthetic shines through.</p>
+                    <p class="text-gray-600 mb-6">Beyond aesthetics, professional plastering provides critical benefits:</p>
+                    
+                    <ul class="text-gray-600 space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="value-icon rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="fas fa-shield-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Structural Protection</h4>
+                                <p>Plaster acts as a protective layer, shielding walls from moisture, impact damage, and everyday wear and tear.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="value-icon rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="fas fa-thermometer-half text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Thermal Efficiency</h4>
+                                <p>Properly applied plaster improves insulation, helping to maintain comfortable temperatures and reduce energy costs.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="value-icon rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="fas fa-volume-mute text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Acoustic Benefits</h4>
+                                <p>Plaster helps dampen sound transmission between rooms, creating quieter, more peaceful living spaces.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <img src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Perfectly plastered wall" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">The Premier Plastering Difference</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Our craftsmen possess a unique blend of technical expertise and artistic sensibility that sets our work apart.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div class="skill-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="value-icon rounded-full p-4 inline-flex mb-6">
+                        <i class="fas fa-ruler-combined text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Precision Application</h3>
+                    <p class="text-gray-600">Our technicians master the exact consistency and application techniques required for different plaster types, ensuring optimal adhesion and a flawless finish every time.</p>
+                </div>
+                
+                <!-- Skill 2 -->
+                <div class="skill-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="value-icon rounded-full p-4 inline-flex mb-6">
+                        <i class="fas fa-eye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Keen Eye for Detail</h3>
+                    <p class="text-gray-600">We notice imperfections invisible to the untrained eye. Our meticulous attention to detail ensures every surface is perfectly smooth, level, and ready for finishing.</p>
+                </div>
+                
+                <!-- Skill 3 -->
+                <div class="skill-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="value-icon rounded-full p-4 inline-flex mb-6">
+                        <i class="fas fa-tint-slash text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Moisture Management</h3>
+                    <p class="text-gray-600">We understand how to properly manage moisture content during application and drying—a critical skill that prevents cracking, bubbling, and other common plaster issues.</p>
+                </div>
+                
+                <!-- Skill 4 -->
+                <div class="skill-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="value-icon rounded-full p-4 inline-flex mb-6">
+                        <i class="fas fa-history text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Time Management</h3>
+                    <p class="text-gray-600">We've perfected our workflow to work within each material's optimal working time, ensuring perfect results without rushed compromises or material waste.</p>
+                </div>
+                
+                <!-- Skill 5 -->
+                <div class="skill-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="value-icon rounded-full p-4 inline-flex mb-6">
+                        <i class="fas fa-magic text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Problem-Solving Expertise</h3>
+                    <p class="text-gray-600">With years of experience, we can diagnose and resolve underlying issues before plastering—from substrate problems to environmental challenges—preventing future defects.</p>
+                </div>
+                
+                <!-- Skill 6 -->
+                <div class="skill-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                    <div class="value-icon rounded-full p-4 inline-flex mb-6">
+                        <i class="fas fa-paint-roller text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-4">Versatile Technique Mastery</h3>
+                    <p class="text-gray-600">Our team is proficient in everything from traditional lime plastering to modern acrylic rendering, allowing us to recommend and execute the perfect solution for your specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Meticulous Process</h2>
+                <p class="max-w-3xl mx-auto opacity-80">Quality results demand a systematic approach. Here's how we ensure perfection in every project.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="process-step bg-secondary p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-4xl font-bold text-accent mb-4">01</div>
+                    <h3 class="text-xl font-bold mb-4">Assessment & Preparation</h3>
+                    <p class="opacity-80">We thoroughly evaluate surfaces, address any underlying issues, and prepare the area for optimal plaster adhesion.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="process-step bg-secondary p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-4xl font-bold text-accent mb-4">02</div>
+                    <h3 class="text-xl font-bold mb-4">Material Selection</h3>
+                    <p class="opacity-80">We choose the perfect plaster formulation for your specific surface, conditions, and desired outcome.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-step bg-secondary p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-4xl font-bold text-accent mb-4">03</div>
+                    <h3 class="text-xl font-bold mb-4">Precision Application</h3>
+                    <p class="opacity-80">Our skilled technicians apply plaster with expert technique, ensuring even coverage and perfect thickness.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="process-step bg-secondary p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-4xl font-bold text-accent mb-4">04</div>
+                    <h3 class="text-xl font-bold mb-4">Finishing & Quality Check</h3>
+                    <p class="opacity-80">We meticulously finish surfaces and conduct rigorous quality inspections before considering a project complete.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="index.html#contact" class="inline-block bg-accent hover:bg-orange-600 text-white px-8 py-4 rounded-md text-lg font-semibold transition duration-300">
+                    Experience the Premier Difference
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Quality Materials Matter</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">We use only premium materials from trusted suppliers to ensure lasting results.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1615529328331-f8917597711f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Plastering materials and tools" class="rounded-lg shadow-xl">
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-6">Our Commitment to Quality Materials</h3>
+                    <p class="text-gray-600 mb-6">At Premier Plastering, we understand that exceptional results require exceptional materials. That's why we partner with leading manufacturers who share our commitment to quality and durability.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Premium Gypsum Plasters</h4>
+                                <p class="text-gray-600">For superior interior surfaces with excellent adhesion and minimal shrinkage</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Weather-Resistant Exterior Renders</h4>
+                                <p class="text-gray-600">Formulated to withstand the elements while maintaining their aesthetic appeal</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Specialty Finishes</h4>
+                                <p class="text-gray-600">From Venetian plaster to polished finishes, we use only the highest quality decorative materials</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Eco-Friendly Options</h4>
+                                <p class="text-gray-600">We offer sustainable plaster solutions for environmentally conscious projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-accent text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Experience Quality Plastering?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Let our skilled craftsmen transform your space with the precision and care that only comes with true expertise.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="index.html#contact" class="bg-white hover:bg-gray-100 text-accent px-8 py-4 rounded-md text-lg font-semibold transition duration-300">
+                    Get Your Free Quote
+                </a>
+                <a href="tel:+1234567890" class="bg-transparent hover:bg-primary border-2 border-white text-white px-8 py-4 rounded-md text-lg font-semibold transition duration-300">
+                    <i class="fas fa-phone mr-2"></i>Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+   
+  <!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+            <!-- About Column -->
+            <div>
+                <h3 class="text-xl font-bold mb-6">Premier Plastering</h3>
+                <p class="mb-6 opacity-80">Professional plastering services for residential and commercial properties across the region. Quality craftsmanship you can trust.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-accent text-xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-accent text-xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-accent text-xl"><i class="fab fa-instagram"></i></a>
+                   
+                </div>
+            </div>
+            
+            <!-- Services Column -->
+            <div>
+                <h3 class="text-xl font-bold mb-6">Our Services</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Interior Plastering</a></li>
+                    <li><a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Exterior Rendering</a></li>
+                    <li><a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Decorative Finishes</a></li>
+                    <li><a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Plaster Repairs</a></li>
+                    <li><a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Drywall Installation</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Column -->
+            <div>
+                <h3 class="text-xl font-bold mb-6">Contact Us</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <i class="fas fa-phone-alt mr-3 text-accent"></i>
+                        <span class="opacity-80">+44 7383320014</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-accent"></i>
+                        <span class="opacity-80">ryanjohnson@homerevivalplasteringbathrooms.com</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-clock mr-3 text-accent"></i>
+                        <span class="opacity-80">Mon-Fri: 8am - 6pm<br>Sat: 9am - 2pm</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p class="opacity-80">&copy; 2025 Home Revival. All rights reserved.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Privacy Policy</a>
+                <a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Terms of Service</a>
+                <a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Cookie Policy</a>
+                <a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Fixed Call Button for Mobile -->
+    <div class="fixed bottom-6 right-6 md:hidden z-50">
+        <a href="tel:+1234567890" class="bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-lg flex items-center justify-center">
+            <i class="fas fa-phone text-xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

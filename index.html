@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="description" content="Quality Plastering & Rendering in Wakefield. Enquire for a quote today!">
+    <meta name="keywords" content="plastering services Wakefield, rendering services Wakefield, skimming services Wakefield, plasterer Wakefield, plastering specialists, plastering contractors, plastering and rendering, plastering repairs, plastering offers, plastering discounts, affordable plastering, local plasterers, professional plastering, domestic plastering, commercial plastering, plastering solutions, wall rendering, smooth finish plastering, interior skimming, exterior rendering, plastering Halifax, plastering Bradford, plastering Huddersfield, plastering Leeds, plastering Barnsley, plastering Pontefract, plastering Castleford, plastering Dewsbury, plastering Batley, plastering Morley">
+   
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Plastering & Skimming  | SEO | Merchant Web" />
+    <meta property="og:description" content="Quality Plastering & Rendering in Wakefield. Enquire for a quote today!" />
+    <meta property="og:image" content="Social_image_.png" />
+    <meta property="og:url" content="https://" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Plastering & Skimming  | SEO | Merchant Web" />
+    <meta name="twitter:description" content="Quality Plastering & Rendering in Wakefield. Enquire for a quote today!" />
+    <meta name="twitter:image" content="Social_.png" />
+
+    <!-- Robots and Indexing -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    
+    <link rel="canonical" href="https://">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier Plastering | Professional Plastering Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#2c5282',
+                        accent: '#ed8936',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('plasterer_in Wakefield.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Gallery styles */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            height: 200px;
+            cursor: pointer;
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Lightbox modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .lightbox-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .close-lightbox {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        
+        .nav-lightbox {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+        
+        .prev-lightbox {
+            left: 20px;
+        }
+        
+        .next-lightbox {
+            right: 20px;
+        }
+        
+        /* Map container */
+        .map-container {
+            height: 400px;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-primary text-2xl font-bold"><i class="fas fa-home mr-2"></i>Home Revival Plastering</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="text-primary hover:text-accent px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">Gallery</a>
+                    <a href="#about" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">About Us</a>
+                    <a href="#areas" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">Areas Covered</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">Testimonials</a>
+                    <a href="#contact" class="text-gray-700 hover:text-accent px-3 py-2 text-sm font-medium">Contact</a>
+                    <a href="tel:+1234567890" class="bg-accent hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">
+                        <i class="fas fa-phone mr-2"></i>Call
+                    </a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-white hover:bg-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#services" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#gallery" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="#about" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="#areas" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Areas Covered</a>
+                <a href="#testimonials" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+                <a href="#contact" class="text-gray-700 hover:bg-gray-100 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="tel:+1234567890" class="bg-accent hover:bg-orange-600 text-white block px-3 py-2 rounded-md text-base font-medium text-center">
+                    <i class="fas fa-phone mr-2"></i>Call Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Home Revival Plastering</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Transforming your walls and ceilings with precision and craftsmanship that stands the test of time.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-accent hover:bg-orange-600 text-white px-8 py-4 rounded-md text-lg font-semibold transition duration-300">
+                    Get a Free Quote
+                </a>
+                <a href="tel:+1234567890" class="bg-transparent hover:bg-white hover:text-primary border-2 border-white text-white px-8 py-4 rounded-md text-lg font-semibold transition duration-300">
+                    <i class="fas fa-phone mr-2"></i>Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer a comprehensive range of plastering services for residential and commercial properties.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="skimming_in Heckmonwike.jpg" alt="Interior Plastering" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Interior Plastering</h3>
+                        <p class="text-gray-600 mb-4">Professional plastering for walls and ceilings in your home or office, creating smooth, durable surfaces.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Skim coating</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Drywall finishing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Plaster repairs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="quality_plastering_in Mirfield.jpg" alt="Exterior Rendering" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Exterior Rendering</h3>
+                        <p class="text-gray-600 mb-4">High-quality exterior rendering to protect and beautify your property's facade.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Cement rendering</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Acrylic rendering</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Waterproof coatings</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 bg-gray-200 overflow-hidden">
+                        <img src="plasterer_in Batley.jpg" alt="Specialty Finishes" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">Specialty Finishes</h3>
+                        <p class="text-gray-600 mb-4">Custom decorative finishes to add character and style to your space.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Venetian plaster</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Polished plaster</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Textured finishes</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <img src="plastering_in Osset.jpg" alt="Plastering professional at work" class="rounded-lg shadow-xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">About Premier Plastering</h2>
+                    <p class="text-gray-600 mb-6">With over 15 years of experience in the industry, Premier Plastering has established itself as a leader in high-quality plastering services. Our team of skilled craftsmen takes pride in delivering exceptional results for every project, big or small.</p>
+                    <p class="text-gray-600 mb-6">We believe in combining traditional techniques with modern materials to achieve flawless finishes that last. Our attention to detail and commitment to customer satisfaction sets us apart from the competition.</p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-primary rounded-full p-3 mr-4">
+                                <i class="fas fa-award text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Certified Professionals</h4>
+                                <p class="text-gray-600">All our plasterers are fully qualified and insured.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary rounded-full p-3 mr-4">
+                                <i class="fas fa-clock text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Timely Completion</h4>
+                                <p class="text-gray-600">We respect your time and complete projects on schedule.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary rounded-full p-3 mr-4">
+                                <i class="fas fa-thumbs-up text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Quality Materials</h4>
+                                <p class="text-gray-600">We use only premium materials from trusted suppliers.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary rounded-full p-3 mr-4">
+                                <i class="fas fa-shield-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">5-Year Guarantee</h4>
+                                <p class="text-gray-600">All our work comes with a comprehensive guarantee.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-block bg-accent hover:bg-orange-600 text-white px-6 py-3 rounded-md text-lg font-semibold transition duration-300">
+                        Get Your Free Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Covered Section -->
+    <section id="areas" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Areas We Cover</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We provide professional plastering services throughout the region. Check if we cover your area.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-10">
+                <div class="lg:w-1/2">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19895.46897912524!2d-0.13619738837890625!3d51.50732220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce3941eb1f%3A0x1a5b356eaef5030!2sLondon%2C%20UK!5e0!3m2!1sen!2sus!4v1689876543210!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Our Service Area</h3>
+                    <p class="text-gray-600 mb-6">We're proud to serve customers across London and the surrounding areas. Whether you're in the city center or the suburbs, our team can come to you.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3">Main Areas Covered:</h4>
+                            <ul class="text-gray-600 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Central London</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>North London</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>South London</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>East London</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>West London</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-3">Also Serving:</h4>
+                            <ul class="text-gray-600 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Greater London area</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Home Counties</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Surrounding towns</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Within 50 miles radius</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 bg-gray-50 p-6 rounded-lg">
+                        <p class="text-gray-600"><i class="fas fa-info-circle text-accent mr-2"></i>Not sure if we cover your area? <a href="#contact" class="text-primary font-semibold hover:underline">Contact us</a> to check availability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+                <p class="max-w-2xl mx-auto opacity-80">Don't just take our word for it - hear from our satisfied customers.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-secondary p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-300 text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"Premier Plastering transformed our living room with their exceptional skim coating work. The walls are now perfectly smooth and the team was professional, clean, and efficient."</p>
+                    <div class="flex items-center">
+                        <div class="bg-white text-primary rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mr-4">JS</div>
+                        <div>
+                            <h4 class="font-bold">John Smith</h4>
+                            <p class="text-sm opacity-80">Homeowner, London</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-secondary p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-300 text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"We've used Premier Plastering for multiple commercial projects. Their attention to detail and ability to meet tight deadlines makes them our go-to plastering contractor."</p>
+                    <div class="flex items-center">
+                        <div class="bg-white text-primary rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mr-4">SD</div>
+                        <div>
+                            <h4 class="font-bold">Sarah Davis</h4>
+                            <p class="text-sm opacity-80">Property Developer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-secondary p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-300 text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"The Venetian plaster feature wall in our restaurant has received countless compliments. The team at Premier Plastering understood our vision and executed it perfectly."</p>
+                    <div class="flex items-center">
+                        <div class="bg-white text-primary rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mr-4">MR</div>
+                        <div>
+                            <h4 class="font-bold">Michael Roberts</h4>
+                            <p class="text-sm opacity-80">Restaurant Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Work Gallery</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Browse through our portfolio of completed projects to see the quality of our craftsmanship.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-index="0">
+                    <img src="plasterer_in Batley.jpg" alt="Smooth wall plastering" class="gallery-img">
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-index="1">
+                    <img src="plasterer_in Skipton.jpg" alt="Exterior rendering" class="gallery-img">
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-index="2">
+                    <img src="plasterer_in Wakefield.jpg" alt="Decorative plaster" class="gallery-img">
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-index="3">
+                    <img src="plastering_in Osset.jpg" alt="Plaster ceiling work" class="gallery-img">
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-index="4">
+                    <img src="professional_plastering_service Batley.jpg" alt="Wall texturing" class="gallery-img">
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-index="5">
+                    <img src="professional_rendering_in Osset.jpg" alt="Finished plaster wall" class="gallery-img">
+                </div>
+                
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" data-index="6">
+                    <img src="quality_rendering_inDewsbury.jpg" alt="Plastering tools" class="gallery-img">
+                </div>
+                
+                <!-- Gallery Item 8 -->
+                <div class="gallery-item" data-index="7">
+                    <img src="skimming_in Heckmonwike.jpg" alt="Modern plaster design" class="gallery-img">
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-accent hover:bg-orange-600 text-white px-8 py-3 rounded-md text-lg font-semibold transition duration-300">
+                    Start Your Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Quote Form Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Get Your Free Quote</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Complete the form below and we'll get back to you within 24 hours with a free, no-obligation quote for your plastering project.</p>
+                </div>
+                
+                <form id="quoteForm" class="bg-white shadow-xl rounded-lg p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Service Required *</label>
+                            <select id="service" name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Select a service</option>
+                                <option value="Interior Plastering">Interior Plastering</option>
+                                <option value="Exterior Rendering">Exterior Rendering</option>
+                                <option value="Specialty Finishes">Specialty Finishes</option>
+                                <option value="Plaster Repairs">Plaster Repairs</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="projectDetails" class="block text-gray-700 font-medium mb-2">Project Details *</label>
+                        <textarea id="projectDetails" name="projectDetails" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" required class="form-checkbox h-5 w-5 text-primary rounded border-gray-300 focus:ring-primary">
+                            <span class="ml-2 text-gray-700">I agree to the <a href="#" class="text-primary hover:underline">privacy policy</a> and consent to Premier Plastering contacting me about my enquiry.</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-accent hover:bg-orange-600 text-white py-4 px-6 rounded-md text-lg font-semibold transition duration-300">
+                        Request Free Quote
+                    </button>
+                    
+                    <div id="formSuccess" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-md">
+                        Thank you! Your quote request has been submitted. We'll be in touch shortly.
+                    </div>
+                    
+                    <div id="formError" class="hidden mt-4 p-4 bg-red-100 text-red-700 rounded-md">
+                        There was an error submitting your form. Please try again or call us directly.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="bg-accent text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 text-left">
+                    <h3 class="text-2xl font-bold mb-2">Ready to transform your space?</h3>
+                    <p class="opacity-90">Contact us today for a free consultation and quote.</p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:+1234567890" class="bg-white hover:bg-gray-100 text-accent px-8 py-3 rounded-md text-lg font-semibold transition duration-300">
+                        <i class="fas fa-phone mr-2"></i>Call Now
+                    </a>
+                    <a href="#contact" class="bg-transparent hover:bg-primary border-2 border-white text-white px-8 py-3 rounded-md text-lg font-semibold transition duration-300">
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-12">
+            <!-- About Column -->
+            <div>
+                <h3 class="text-xl font-bold mb-6">Premier Plastering</h3>
+                <p class="mb-6 opacity-80">Professional plastering services for residential and commercial properties across the region. Quality craftsmanship you can trust.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-accent text-xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-accent text-xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-accent text-xl"><i class="fab fa-instagram"></i></a>
+                   
+                </div>
+            </div>
+            
+            <!-- Services Column -->
+            <div>
+                <h3 class="text-xl font-bold mb-6">Our Services</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Interior Plastering</a></li>
+                    <li><a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Exterior Rendering</a></li>
+                    <li><a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Decorative Finishes</a></li>
+                    <li><a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Plaster Repairs</a></li>
+                    <li><a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Drywall Installation</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Column -->
+            <div>
+                <h3 class="text-xl font-bold mb-6">Contact Us</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <i class="fas fa-phone-alt mr-3 text-accent"></i>
+                        <span class="opacity-80">+44 7383320014</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-accent"></i>
+                        <span class="opacity-80">ryanjohnson@homerevivalplasteringbathrooms.com</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-clock mr-3 text-accent"></i>
+                        <span class="opacity-80">Mon-Fri: 8am - 6pm<br>Sat: 9am - 2pm</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p class="opacity-80">&copy; 2025 Home Revival. All rights reserved.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Privacy Policy</a>
+                <a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Terms of Service</a>
+                <a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Cookie Policy</a>
+                <a href="#" class="opacity-80 hover:text-accent hover:opacity-100 transition">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <span class="nav-lightbox prev-lightbox"><i class="fas fa-chevron-left"></i></span>
+        <span class="nav-lightbox next-lightbox"><i class="fas fa-chevron-right"></i></span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" class="lightbox-img" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Fixed Call Button for Mobile -->
+    <div class="fixed bottom-6 right-6 md:hidden z-50">
+        <a href="tel:+1234567890" class="bg-green-600 hover:bg-green-700 text-white rounded-full p-4 shadow-lg flex items-center justify-center">
+            <i class="fas fa-phone text-xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Form submission
+        const quoteForm = document.getElementById('quoteForm');
+        const formSuccess = document.getElementById('formSuccess');
+        const formError = document.getElementById('formError');
+        
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Simulate form submission
+            formSuccess.classList.add('hidden');
+            formError.classList.add('hidden');
+            
+            // In a real implementation, you would send the form data to your server here
+            // For this demo, we'll just show a success message
+            setTimeout(() => {
+                formSuccess.classList.remove('hidden');
+                quoteForm.reset();
+            }, 1000);
+            
+            // Scroll to show the success message
+            setTimeout(() => {
+                formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 1100);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // Gallery lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeLightbox = document.querySelector('.close-lightbox');
+        const prevButton = document.querySelector('.prev-lightbox');
+        const nextButton = document.querySelector('.next-lightbox');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        let currentImageIndex = 0;
+        
+        // Open lightbox with clicked image
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                currentImageIndex = parseInt(item.getAttribute('data-index'));
+                updateLightboxImage();
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+        });
+        
+        // Close lightbox
+        closeLightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        });
+        
+        // Navigate to previous image
+        prevButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex - 1 + galleryItems.length) % galleryItems.length;
+            updateLightboxImage();
+        });
+        
+        // Navigate to next image
+        nextButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex + 1) % galleryItems.length;
+            updateLightboxImage();
+        });
+        
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+            }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.style.display === 'flex') {
+                if (e.key === 'Escape') {
+                    lightbox.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                } else if (e.key === 'ArrowLeft') {
+                    currentImageIndex = (currentImageIndex - 1 + galleryItems.length) % galleryItems.length;
+                    updateLightboxImage();
+                } else if (e.key === 'ArrowRight') {
+                    currentImageIndex = (currentImageIndex + 1) % galleryItems.length;
+                    updateLightboxImage();
+                }
+            }
+        });
+        
+        // Update lightbox image
+        function updateLightboxImage() {
+            const imageSrc = galleryItems[currentImageIndex].querySelector('img').src;
+            lightboxImg.src = imageSrc;
+        }
+    </script>
+</body>
+</html>
